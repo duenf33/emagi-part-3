@@ -10,6 +10,6 @@ const translateWord = function(word) {
 
     return word;
 }
-
+// translateWord('baby')//?
 
 module.exports = translateWord;

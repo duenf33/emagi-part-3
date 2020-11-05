@@ -2,7 +2,7 @@ const emojis = require('./emojis.js');
 
 
 // string-building version
-const encodeWord = function(word) {
+const encodeWordAlt = function(word) {
     let result = '';
     for (const char of word) {
         let found = false;
@@ -22,7 +22,7 @@ const encodeWord = function(word) {
 }
 
 // mapping version
-const encodeWordAlt = function(word) {
+const encodeWord = function(word) {
     const letters = word.split('');
     const encodedLetters = letters.map(function(letter) {
         for (const emoji of emojis) {
