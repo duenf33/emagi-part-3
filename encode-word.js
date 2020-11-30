@@ -12,12 +12,10 @@ const encodeWordAlt = function(word) {
                 result += emoji.symbol;
             }
         }
-
         if (found === false) {
             result += char;
         }
     }
-
     return result;
 }
 
@@ -30,10 +28,8 @@ const encodeWord = function(word) {
                 return emoji.symbol;
             }
         }
-
         return letter;
     })
-
     return encodedLetters.join('');
 }
 
@@ -44,8 +40,7 @@ const encodeWordAlt2 = function(word) {
             if (emoji.letter === letter) {
                 return emoji.symbol;
             }
-        }
-
+        }  
         return letter;
     }).join('');
 }
